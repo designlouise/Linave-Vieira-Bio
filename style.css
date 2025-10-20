@@ -50,8 +50,8 @@ body {
   width: 125%;
   height: auto;
   object-fit: cover;
-  object-position: 40% top;
-  transform: translateY(-60px);
+  object-position: 60% top;
+  transform: translateY(-90px);
   display: block;
 }
 
