@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
 
 :root {
-  --bg-color: #7470b3; /* Roxo principal */
+  --bg-color: #7470b3;
   --accent-color: #e8c46a;
   --text-light: #b7e3f7;
   --text-dark: #fff;
   --pink: #f2b3c0;
 }
 
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +16,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+/* BASE */
 body {
   background-color: var(--bg-color);
   color: var(--text-dark);
@@ -24,6 +26,7 @@ body {
   min-height: 100vh;
 }
 
+/* CONTAINER */
 .container {
   width: 360px;
   text-align: center;
@@ -34,25 +37,25 @@ body {
   border-radius: 0 0 60% 60% / 0 0 15% 15%;
 }
 
-/* 🔹 FOTO AJUSTADA – CENTRALIZADA E PREENCHENDO O TOPO */
+/* FOTO */
 .profile-img {
   position: relative;
   overflow: hidden;
   border-bottom-left-radius: 65% 45%;
   border-bottom-right-radius: 65% 45%;
-  height: 240px; /* Altura controlada para manter proporção da imagem */
+  height: 240px;
 }
 
 .profile-img img {
-  width: 125%; /* ligeiramente maior que o container para cobrir bem as bordas */
+  width: 125%;
   height: auto;
   object-fit: cover;
-  object-position: 40% top; /* centraliza o rosto no topo */
-  transform: translateY(-60px); /* move levemente para cima o enquadramento do rosto */
+  object-position: 40% top;
+  transform: translateY(-60px);
   display: block;
 }
 
-/* 🔸 LOGO EM ALTO RELEVO */
+/* LOGO */
 .logo {
   position: relative;
   margin-top: -65px;
@@ -65,14 +68,13 @@ body {
   object-fit: cover;
   border-radius: 50%;
   background-color: #7470b3;
-  border: 6px solid var(--pink); /* 🎨 agora a borda é rosa pastel */
-  box-shadow: 
-    0 6px 15px rgba(0,0,0,0.25),
-    inset 0 2px 4px rgba(255,255,255,0.4);
+  border: 6px solid var(--pink);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25),
+              inset 0 2px 4px rgba(255,255,255,0.4);
   margin-bottom: 15px;
 }
 
-/* 🔹 TÍTULOS */
+/* TÍTULOS */
 h1 {
   font-size: 1.6rem;
   color: var(--accent-color);
@@ -85,7 +87,7 @@ h2 {
   margin-bottom: 25px;
 }
 
-/* 🔹 BOTÕES */
+/* BOTÕES */
 .buttons {
   display: flex;
   flex-direction: column;
@@ -119,18 +121,19 @@ h2 {
   background-color: #bde3f2;
 }
 
-/* 🔹 RODAPÉ */
+/* RODAPÉ */
 .footer {
   font-size: 0.8rem;
   color: #dbe6f7;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .footer-signature {
+  text-align: center;
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.8);
-  margin-top: 30px;
-  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
   font-weight: 500;
   letter-spacing: 0.5px;
 }
@@ -146,13 +149,14 @@ h2 {
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
   cursor: pointer;
 }
-/* 🔹 ÍCONE DO LAÇO */
+
+/* LAÇO */
 .ribbon img {
   width: 45px;
   margin-top: 10px;
 }
 
-/* 🔹 CURVA INFERIOR */
+/* CURVA INFERIOR */
 .container::after {
   content: "";
   position: absolute;
@@ -164,4 +168,23 @@ h2 {
   border-top-left-radius: 50% 30%;
   border-top-right-radius: 50% 30%;
   z-index: -1;
+}
+
+/* 🔹 ANIMAÇÃO SUAVE */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.fade-in:nth-child(2) { animation-delay: 0.2s; }
+.fade-in:nth-child(3) { animation-delay: 0.4s; }
+.fade-in:nth-child(4) { animation-delay: 0.6s; }
+.fade-in:nth-child(5) { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
