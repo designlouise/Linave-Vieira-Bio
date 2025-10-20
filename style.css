@@ -38,8 +38,8 @@ body {
 .profile-img {
   position: relative;
   overflow: hidden;
-  border-bottom-left-radius: 50% 10%;
-  border-bottom-right-radius: 50% 10%;
+  border-bottom-left-radius: 50% 25%;
+  border-bottom-right-radius: 50% 25%;
 }
 
 .profile-img img {
@@ -51,7 +51,7 @@ body {
 /* LOGO CENTRAL CIRCULAR */
 .logo {
   margin-top: -60px;
-}
+} 
 
 .logo img {
   width: 100px;
