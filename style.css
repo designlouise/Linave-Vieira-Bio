@@ -1,7 +1,7 @@
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
 
 :root {
-  --bg-color: #6b6ba9;
+  --bg-color: #7470b3; /* Novo tom de roxo principal */
   --accent-color: #e8c46a;
   --text-light: #b7e3f7;
   --text-dark: #fff;
@@ -62,10 +62,11 @@ body {
   height: 120px;
   object-fit: cover;
   border-radius: 50%;
-  background-color: #d4c8f4; /* lilás suave dentro do círculo */
+  background-color: #7470b3; /* Cor do círculo igual ao fundo */
   border: 6px solid #fff;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.25),
-              inset 0 2px 4px rgba(255,255,255,0.4);
+  box-shadow: 
+    0 6px 15px rgba(0,0,0,0.25),
+    inset 0 2px 4px rgba(255,255,255,0.4);
   margin-bottom: 15px;
 }
 
