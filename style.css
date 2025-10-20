@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
 
 :root {
-  --bg-color: #7470b3; /* Novo tom de roxo principal */
+  --bg-color: #7470b3; /* Roxo principal */
   --accent-color: #e8c46a;
   --text-light: #b7e3f7;
   --text-dark: #fff;
@@ -34,26 +34,28 @@ body {
   border-radius: 0 0 60% 60% / 0 0 15% 15%;
 }
 
-/* FOTO MAIS PRÓXIMA E COM CURVA SUAVE */
+/* 🔹 FOTO AJUSTADA – CENTRALIZADA E PREENCHENDO O TOPO */
 .profile-img {
   position: relative;
   overflow: hidden;
-  border-bottom-left-radius: 60% 40%;
-  border-bottom-right-radius: 60% 40%;
+  border-bottom-left-radius: 65% 45%;
+  border-bottom-right-radius: 65% 45%;
+  height: 240px; /* Altura controlada para manter proporção da imagem */
 }
 
 .profile-img img {
-  width: 115%;
+  width: 125%; /* ligeiramente maior que o container para cobrir bem as bordas */
   height: auto;
-  object-position: center top;
+  object-fit: cover;
+  object-position: center top; /* centraliza o rosto no topo */
+  transform: translateY(-35px); /* move levemente para cima o enquadramento do rosto */
   display: block;
-  transform: translateY(-10px);
 }
 
-/* LOGO CIRCULAR EM ALTO RELEVO SOBRE A FOTO */
+/* 🔸 LOGO EM ALTO RELEVO */
 .logo {
   position: relative;
-  margin-top: -70px;
+  margin-top: -65px;
   z-index: 10;
 }
 
@@ -62,7 +64,7 @@ body {
   height: 120px;
   object-fit: cover;
   border-radius: 50%;
-  background-color: #7470b3; /* Cor do círculo igual ao fundo */
+  background-color: #7470b3;
   border: 6px solid #fff;
   box-shadow: 
     0 6px 15px rgba(0,0,0,0.25),
@@ -70,7 +72,7 @@ body {
   margin-bottom: 15px;
 }
 
-/* TÍTULOS */
+/* 🔹 TÍTULOS */
 h1 {
   font-size: 1.6rem;
   color: var(--accent-color);
@@ -83,7 +85,7 @@ h2 {
   margin-bottom: 25px;
 }
 
-/* BOTÕES */
+/* 🔹 BOTÕES */
 .buttons {
   display: flex;
   flex-direction: column;
@@ -117,20 +119,20 @@ h2 {
   background-color: #bde3f2;
 }
 
-/* RODAPÉ */
+/* 🔹 RODAPÉ */
 .footer {
   font-size: 0.8rem;
   color: #dbe6f7;
   margin-top: 25px;
 }
 
-/* ÍCONE DO LAÇO */
+/* 🔹 ÍCONE DO LAÇO */
 .ribbon img {
   width: 45px;
   margin-top: 10px;
 }
 
-/* CURVA INFERIOR */
+/* 🔹 CURVA INFERIOR */
 .container::after {
   content: "";
   position: absolute;
