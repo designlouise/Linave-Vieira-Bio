@@ -48,7 +48,7 @@ body {
   height: auto;
   object-fit: cover;
   object-position: 40% top; /* centraliza o rosto no topo */
-  transform: translateY(-35px); /* move levemente para cima o enquadramento do rosto */
+  transform: translateY(-60px); /* move levemente para cima o enquadramento do rosto */
   display: block;
 }
 
