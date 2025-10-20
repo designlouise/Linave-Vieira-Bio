@@ -47,7 +47,7 @@ body {
   width: 125%; /* ligeiramente maior que o container para cobrir bem as bordas */
   height: auto;
   object-fit: cover;
-  object-position: center top; /* centraliza o rosto no topo */
+  object-position: 40% top; /* centraliza o rosto no topo */
   transform: translateY(-35px); /* move levemente para cima o enquadramento do rosto */
   display: block;
 }
