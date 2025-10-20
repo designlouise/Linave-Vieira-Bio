@@ -145,3 +145,24 @@ h2 {
   border-top-right-radius: 50% 30%;
   z-index: -1;
 }
+
+.footer-signature {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.footer-signature span {
+  color: var(--pink);
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.footer-signature span:hover {
+  color: var(--accent-color);
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
