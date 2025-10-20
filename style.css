@@ -43,11 +43,11 @@ body {
 }
 
 .profile-img img {
-  width: 115%;
+  width: 125%;
   height: auto;
-  object-position: center top;
+  object-position: center 25%;
   display: block;
-  transform: translateY(-10px);
+  transform: translateY(-20px);
 }
 
 /* LOGO CIRCULAR EM ALTO RELEVO SOBRE A FOTO */
